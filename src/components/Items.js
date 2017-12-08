@@ -7,7 +7,7 @@ class Items extends Component {
     // What state does this component have?
   };
 
-  updateSearchTerm = searchTerm => {};
+  updateSearchTerm = searchTerm => { };
 
   render() {
     const { title, items } = this.props;
@@ -21,12 +21,12 @@ class Items extends Component {
           .filter(item =>
             // Hmm… this needs some work.
             item.value.toLowerCase().includes(''.toLowerCase()),
-          )
+        )
           .map(item => (
             <Item
               key={item.id}
-              onCheckOff={() => {}}
-              onRemove={() => {}}
+              onCheckOff={() => { }}
+              onRemove={() => { }}
               item={item}
             />
           ))}
